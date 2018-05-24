@@ -2,7 +2,7 @@
 
 FIXME comment/uncomment junit-platform-surefire-provider
 
-##### Callbacks
+### Callbacks
 ```
 mvn test \
 -Dtest='com.example.callbacks.testng.**' \
@@ -27,7 +27,7 @@ com.example.callbacks.testng.MyReporter
 ```mvn clean test -Dtest='com.example.callbacks.junit.**'```
 ```mvn clean test -Dtest=com.example.callbacks.junit.BTest```
 
-##### Tags
+### Tags
 
 IDEA
 - run configuration, tags (JUnit 5), fill in tags - runs all classes, not specific
@@ -55,7 +55,7 @@ JUnit
 
 TODO TestNG dependsOnMethod, dependsOnGroups
 
-##### Sorting
+### Sorting
 JUnit
 - classes unordered (B D A C)
 - methods alphabetic (a b c d)
@@ -76,8 +76,8 @@ Run Order
 
 TODO задача про рюкзак https://seleniumcamp.com/talk/pandoras-white-box/
 
-##### Display Name
+### Display Name
 - mvn test -Dtest=com.example.displayname.TestTestng1
 - mvn test -Dtest=com.example.displayname.TestJunit1
 
-##### Metadata
+### Metadata
