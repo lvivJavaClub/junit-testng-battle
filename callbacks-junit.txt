@@ -1,0 +1,50 @@
+callback beforeAll
+    beforeAll A
+
+    callback postProcessTestInstance
+
+    callback beforeEach
+        callback beforeTestExecution
+            testA1
+        callback afterTestExecution
+
+        afterEach A
+    callback afterEach
+
+    callback postProcessTestInstance
+
+    callback beforeEach
+        callback beforeTestExecution
+            testA2
+        callback afterTestExecution
+
+        afterEach A
+    callback afterEach
+
+callback afterAll
+
+-----------------------------------------------------------------
+
+callback postProcessTestInstance
+
+callback beforeAll
+    beforeAll B
+
+    callback beforeEach
+        callback beforeTestExecution
+            testA1
+        callback afterTestExecution
+
+        afterEach B
+    callback afterEach
+
+    callback beforeEach
+        callback beforeTestExecution
+            testA2
+        callback afterTestExecution
+
+        afterEach B
+    callback afterEach
+
+callback afterAll
+

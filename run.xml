@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="10" thread-count="10" parallel="methods">
+    <listeners>
+        <listener class-name="com.example.sorting.testng.SortingInterceptor"/>
+    </listeners>
+    <test name="Regression">
+        <packages>
+            <package name="com.example.sorting.testng"/>
+            <package name="com.example.sorting.testng"/>
+            <package name="com.example.sorting.testng"/>
+            <package name="com.example.sorting.testng"/>
+            <package name="com.example.sorting.testng"/>
+        </packages>
+    </test>
+</suite>

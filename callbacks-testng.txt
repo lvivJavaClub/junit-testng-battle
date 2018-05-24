@@ -1,0 +1,50 @@
+IAnnotationTransformer method testB2
+IAnnotationTransformer method testA1
+IAnnotationTransformer method testB1
+IAnnotationTransformer method testA2
+
+ISuiteListener onStart
+
+    ITestListener onStart
+
+        IInvokedMethodListener beforeInvocation
+            beforeClass A
+        IInvokedMethodListener afterInvocation
+
+        ITestListener onTestStart
+            IInvokedMethodListener beforeInvocation
+                testA1
+            IInvokedMethodListener afterInvocation
+        ITestListener onTestSuccess
+
+        ITestListener onTestStart
+            IInvokedMethodListener beforeInvocation
+                testA2
+            IInvokedMethodListener afterInvocation
+        ITestListener onTestSuccess
+
+        ITestListener onTestStart
+            IInvokedMethodListener beforeInvocation
+                testB1
+            IInvokedMethodListener afterInvocation
+        ITestListener onTestSuccess
+
+        IInvokedMethodListener beforeInvocation
+            afterMethod B
+        IInvokedMethodListener afterInvocation
+
+        ITestListener onTestStart
+            IInvokedMethodListener beforeInvocation
+                testB2
+            IInvokedMethodListener afterInvocation
+        ITestListener onTestSuccess
+
+        IInvokedMethodListener beforeInvocation
+            afterMethod B
+        IInvokedMethodListener afterInvocation
+
+    ITestListener onFinish
+
+ISuiteListener onFinish
+
+IReporter generateReport
