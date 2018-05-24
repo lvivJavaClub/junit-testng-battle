@@ -74,6 +74,9 @@ Run Order
     - alphabetical
     - could be changed
 
+Clean TestNG CMD Run Command
+java -cp .:testng-6.14.3.jar:jcommander-1.72.jar:target/junit-testng-battle-1.0-SNAPSHOT-tests.jar org.testng.TestNG run.xml
+
 TODO задача про рюкзак https://seleniumcamp.com/talk/pandoras-white-box/
 
 ### Display Name

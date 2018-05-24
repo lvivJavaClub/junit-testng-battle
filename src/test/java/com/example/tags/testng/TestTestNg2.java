@@ -14,7 +14,7 @@ public class TestTestNg2 {
         System.out.println("2 - test 1");
     }
 
-    @Test(groups = {REGRESSION}, dependsOnGroups = "smoke")
+    @Test(groups = {REGRESSION})
     void test2() {
         Sleeper.seconds(2);
         System.out.println("2 - test 2");

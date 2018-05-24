@@ -1,16 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite" verbose="10" thread-count="10" parallel="methods">
+<suite name="Suite" parallel="methods" thread-count="1">
     <listeners>
-        <listener class-name="com.example.sorting.testng.SortingInterceptor"/>
+        <listener class-name="com.example.sorting.testng.ExecutionTimeSortingInterceptor"/>
     </listeners>
-    <test name="Regression">
-        <packages>
-            <package name="com.example.sorting.testng"/>
-            <package name="com.example.sorting.testng"/>
-            <package name="com.example.sorting.testng"/>
-            <package name="com.example.sorting.testng"/>
-            <package name="com.example.sorting.testng"/>
-        </packages>
+    <test name="Regression" preserve-order="false">
+        <classes>
+            <class name="com.example.sorting.testng.TestA"/>
+            <class name="com.example.sorting.testng.TestB"/>
+            <class name="com.example.sorting.testng.TestD"/>
+            <class name="com.example.sorting.testng.TestC"/>
+        </classes>
     </test>
 </suite>
